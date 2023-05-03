@@ -1,0 +1,3 @@
+# This file is used internally by FFMPEG.
+file 'file:/home/guilherme/knowledge-representation/LogicWizard/media/videos/fase1/480p15/partial_movie_files/CreateTableExample/4266129954_2691130330_2358810818.mp4'
+file 'file:/home/guilherme/knowledge-representation/LogicWizard/media/videos/fase1/480p15/partial_movie_files/CreateTableExample/1380718205_3837998516_2017307328.mp4'
