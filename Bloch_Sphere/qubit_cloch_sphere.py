@@ -9,7 +9,7 @@ class BlochSphere(Scene):
         x_color = RED
         y_color = GREEN
         z_color = BLUE
-
+        ORIGIN = np.array([0, 0, 0])
         # Create the axes
         axes = ThreeDAxes(
             x_range=(-1.2, 1.2),
@@ -36,16 +36,15 @@ class BlochSphere(Scene):
         # Define the initial qubit state
         theta = 30 * DEGREES
         phi = 45 * DEGREES
-        psi = np.cos(theta/2)*UP + np.exp(complex(0, phi))*np.sin(theta/2)*DOWN
-
+        #psi = np.cos(theta/2)*UP + np.exp(complex(0, phi))*np.sin(theta/2)*DOWN
+        #psi = np.cos(theta/2)+ np.exp(complex(0, phi))*np.sin(theta/2)
         # Create the qubit arrow
         arrow = Arrow3D(
-            start=ORIGIN,
-            end=psi,
+            start=np.array([0, 0, 0]),
+            end=np.cos(theta/2),
             color=YELLOW,
-            stroke_width=2,
-            max_tip_length_to_length_ratio=0.25,
-            tip_shape=Square(),
+            resolution=8,
+
         )
 
         # Add the qubit arrow to the sphere

@@ -3,15 +3,10 @@ from manim import *
 class HilbertSpace(Scene):
     def construct(self):
         axes = Axes(
-            x_range=(-1.5, 1.5),
-            y_range=(-1.5, 1.5),
-            x_length=6,
-            y_length=6,
-            axis_config={
-                "include_numbers": True,
-                "number_scale_val": 0.5,
-                "font_size": 20,
-            },
+            x_range=[-1.5, 1.5],
+            y_range=[-1.5, 1.5],
+            tips=False,
+            axis_config={"include_numbers": True},
         )
 
         hilbert_space = VGroup(axes)
