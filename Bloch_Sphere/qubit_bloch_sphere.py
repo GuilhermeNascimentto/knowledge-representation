@@ -39,7 +39,7 @@ class BlochSphere(Scene):
         #psi = np.cos(theta/2)*UP + np.exp(complex(0, phi))*np.sin(theta/2)*DOWN
         #psi = np.cos(theta/2)+ np.exp(complex(0, phi))*np.sin(theta/2)
         # Create the qubit arrow
-        ORIGIN = np.array([0, 0, 0])
+
         arrow = Arrow3D(
             start=ORIGIN,
             end=np.cos(theta/2),

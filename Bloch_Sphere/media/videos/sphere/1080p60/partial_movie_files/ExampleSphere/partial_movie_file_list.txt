@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:/home/guilherme/knowledge-representation/Bloch_Sphere/media/videos/sphere/1080p60/partial_movie_files/ExampleSphere/4167479338_3315967912_631829896.mp4'
+file 'file:/home/guilherme/knowledge-representation/Bloch_Sphere/media/videos/sphere/1080p60/partial_movie_files/ExampleSphere/1840585388_3315967912_1098098453.mp4'
+file 'file:/home/guilherme/knowledge-representation/Bloch_Sphere/media/videos/sphere/1080p60/partial_movie_files/ExampleSphere/1066846915_378076353_455836807.mp4'
+file 'file:/home/guilherme/knowledge-representation/Bloch_Sphere/media/videos/sphere/1080p60/partial_movie_files/ExampleSphere/1066846915_2017786580_3951498485.mp4'
+file 'file:/home/guilherme/knowledge-representation/Bloch_Sphere/media/videos/sphere/1080p60/partial_movie_files/ExampleSphere/1066846915_2464823014_445421672.mp4'

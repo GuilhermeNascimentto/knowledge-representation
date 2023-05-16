@@ -1,0 +1,3 @@
+# This file is used internally by FFMPEG.
+file 'file:/home/guilherme/knowledge-representation/Bloch_Sphere/media/videos/qubit_bloch_sphere/1080p60/partial_movie_files/BlochSphere/2902699114_3340291919_1429025395.mp4'
+file 'file:/home/guilherme/knowledge-representation/Bloch_Sphere/media/videos/qubit_bloch_sphere/1080p60/partial_movie_files/BlochSphere/3931933789_2390641591_1245831388.mp4'

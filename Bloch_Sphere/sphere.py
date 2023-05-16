@@ -9,6 +9,7 @@
 
 from manim import *
 
+import numpy as np
 class ExampleSphere(ThreeDScene):
     def construct(self):
 
@@ -23,18 +24,43 @@ class ExampleSphere(ThreeDScene):
 
         #definindo cor e opacidade. 
         sphere.set_fill(BLUE, 0.01) 
+        sphere.set_stroke(width=1)
 
         #criando eixo do tips=false é sem as setas de sentido
         axes = ThreeDAxes(tips=False)
 
+        theta = 90 * DEGREES
+        phi = 45 * DEGREES
+
+        estado = (3.0, 2.0, 3.0)
         #criando e definindo o vetor PSI
-        vector = Arrow3D(start= np.array([0,0,0]),
-                    end= np.array([3,1,3]),
-                    resolution = 10)
+        arrow = Arrow3D(start= ORIGIN,
+                    end= np.array(estado),
+                    color=YELLOW,
+                    resolution = 8
+                    )
+
+        #end= [3*np.cos(theta), 3*np.sin(theta), 3*np.cos(phi)],
 
         #criando labels do estado basico do qubit e posicionando no eixo
         ket0 = axes.get_z_axis_label(Tex(r"$| 0 \rangle$"))
         ket1 = axes.get_z_axis_label(Tex(r"$| 1 \rangle$")).next_to(axes.z_axis, -1.0)
         #adicionando os objetos na cena
-        self.add(axes, sphere, vector, ket0, ket1)            
+        sphere.
+        estado = (0, 0, 3.0)
+        
+        self.wait()
+        arrow.target = Arrow3D(start= ORIGIN,
+                    end= np.array(estado),
+                    color=YELLOW,
+                    resolution = 8
+                    )
+       
+        self.add(axes, sphere, ket0, ket1)
+        self.wait()
+        self.play(Create(arrow))
+        self.play(MoveToTarget(arrow))
+        self.wait(5)
 
+        #self.play(Rotate(arrow.end_to, PI/2))
+        #self.play(ApplyMethod(arrow,shift, LEFT*2))
